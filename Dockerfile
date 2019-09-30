@@ -2,5 +2,5 @@ FROM asvira/composer
 
 MAINTAINER Alexander Sukhodolsky <asvira.net@gmail.com>
 
-RUN cgr require squizlabs/php_codesniffer && \
+RUN composer global require squizlabs/php_codesniffer dealerdirect/phpcodesniffer-composer-installer && \
     composer clear-cache
